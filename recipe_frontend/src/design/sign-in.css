@@ -1,0 +1,38 @@
+#sign-in-11-235.screen-canvas {}
+
+#hello-text {
+  left: 30px;
+  top: 94px;
+  width: 84px;
+  height: 45px;
+}
+#welcome-text {
+  left: 30px;
+  top: 139px;
+  width: 155px;
+  height: 30px;
+}
+
+#email-field { left: 30px; top: 226px; }
+#password-field { left: 30px; top: 337px; }
+
+#sign-in-btn { left: 30px; top: 480px; }
+
+#or-with { left: 90px; top: 560px; }
+
+#btn-google { left: 131px; top: 597px; }
+#btn-facebook { left: 200px; top: 597px; }
+
+#forgot-password {
+  left: 40px;
+  top: 438px;
+  width: 97px;
+  height: 17px;
+}
+
+#signup-prompt { left: 99px; top: 696px; width: 177px; height: 17px; }
+
+#status-bar { left: 0px; top: 0px; }
+#status-time { left: 29.5px; top: 14px; }
+
+#home-indicator { left: 120px; top: 799px; }

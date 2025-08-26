@@ -1,23 +1,30 @@
 :root {
-  --color-ffffff: #ffffff;
-  --color-292929: #292929;
-  --color-000000: #000000;
-  --color-e9fffa: #e9fffa;
-  --color-979797: #979797;
-  --color-fff2af: #fff2af;
-  --color-129575: #129575;
-  --color-dadada: #dadada;
-  --color-4cd964: #4cd964;
-  --color-121212: #121212;
-  --color-ff9c00: #ff9c00;
-  --color-ffc107: #ffc107;
-  --color-ff3d00: #ff3d00;
-  --color-4caf50: #4caf50;
-  --color-1976d2: #1976d2;
-  --color-035b81: #035b81;
-  --color-d9d9d9: #d9d9d9;
-  --color-484848: #484848;
-  --color-303030: #303030;
+  /* Core monochrome palette */
+  --color-ffffff: #ffffff;  /* White */
+  --color-000000: #000000;  /* Black */
+  --color-121212: #121212;  /* Near black */
+  --color-292929: #292929;  /* Dark grey */
+  --color-303030: #303030;  /* Dark grey */
+  --color-484848: #484848;  /* Medium grey */
+  --color-979797: #979797;  /* Medium grey */
+  --color-dadada: #dadada;  /* Light grey */
+  
+  /* Converted color tokens - all now monochrome */
+  --color-e9fffa: #f5f5f5;  /* Light grey (was mint) */
+  --color-fff2af: #f0f0f0;  /* Light grey (was yellow) */
+  --color-129575: #404040;  /* Dark grey (was teal - primary buttons) */
+  --color-4cd964: #606060;  /* Medium grey (was green) */
+  --color-ff9c00: #666666;  /* Medium grey (was orange - accents) */
+  --color-ffc107: #707070;  /* Medium grey (was yellow) */
+  --color-ff3d00: #808080;  /* Medium grey (was red) */
+  --color-4caf50: #505050;  /* Medium grey (was green) */
+  --color-1976d2: #555555;  /* Medium grey (was blue) */
+  --color-035b81: #454545;  /* Dark grey (was dark blue) */
+  --color-d9d9d9: #d9d9d9;  /* Light grey - keep as is */
+  
+  /* Additional greyscale colors for consistency */
+  --color-666666: #666666;  /* Medium grey */
+  --color-a9a9a9: #a9a9a9;  /* Light medium grey */
 
   --font-family-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 
@@ -130,7 +137,7 @@ html, body {
   width: 315px;
   height: 60px;
   border-radius: var(--radius-10);
-  background: var(--color-129575);
+  background: var(--color-000000);
   color: var(--color-ffffff);
   display: flex;
   align-items: center;
@@ -150,7 +157,7 @@ html, body {
   position: relative;
 }
 .icon-arrow-right:before, .icon-arrow-right:after {
-  content: " ";
+  content: "";
   position: absolute;
   right: 4px;
   top: 9px;
@@ -159,14 +166,14 @@ html, body {
   background: var(--color-ffffff);
 }
 .icon-arrow-right:after {
-  content: " ";
+  content: "";
   transform: rotate(45deg);
   width: 7px;
   right: 4px;
   top: 6px;
 }
 .icon-arrow-right:before {
-  content: " ";
+  content: "";
   transform: rotate(-45deg);
   width: 7px;
   right: 4px;
@@ -207,11 +214,12 @@ html, body {
 }
 .social-btn .glyph { width: 24px; height: 24px; }
 .glyph.google {
-  background: conic-gradient(from 0deg, var(--color-ff3d00) 0 90deg, transparent 0) 50% 50%/100% 100% no-repeat;
+  background: var(--color-666666);
+  border-radius: 50%;
 }
 .glyph.facebook {
-  background: var(--color-035b81);
-  mask: linear-gradient(#000 0 0);
+  background: var(--color-484848);
+  border-radius: 4px;
 }
 
 .title-hello {
@@ -234,7 +242,7 @@ html, body {
   font-size: var(--typo-62-size);
   font-weight: var(--typo-62-weight);
   line-height: var(--typo-62-line);
-  color: var(--color-ff9c00);
+  color: var(--color-666666);
 }
 
 .signup-prompt {
@@ -272,7 +280,7 @@ html, body {
 
 /* Accessibility focus */
 button:focus-visible, .chip:focus-visible, input:focus-visible, a:focus-visible {
-  outline: 2px solid var(--color-129575);
+  outline: 2px solid var(--color-000000);
   outline-offset: 2px;
 }
 

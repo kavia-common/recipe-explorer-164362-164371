@@ -25,7 +25,7 @@
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: #ffce80;
+  background: var(--color-d9d9d9);
   overflow: hidden;
 }
 
@@ -52,7 +52,7 @@
   border-radius: 50%;
 }
 #search .search-icon::after {
-  content: " ";
+  content: "";
   position: absolute;
   right: -3px;
   bottom: -1px;
@@ -86,7 +86,7 @@
 #btn-filter .filter-bg {
   position: absolute;
   inset: 0;
-  background: var(--color-129575);
+  background: var(--color-000000);
   border-radius: 10px;
 }
 #btn-filter .icon-gear {
@@ -116,15 +116,15 @@
   padding: 0 16px;
   border-radius: 10px;
   background: var(--color-ffffff);
-  border: 1px solid #71b1a1;
-  color: #71b1a1;
+  border: 1px solid var(--color-979797);
+  color: var(--color-979797);
   font-size: 11px;
   font-weight: 600;
   line-height: 31px;
 }
 .chip-active {
-  background: var(--color-129575);
-  border-color: var(--color-129575);
+  background: var(--color-000000);
+  border-color: var(--color-000000);
   color: var(--color-ffffff);
 }
 
@@ -186,9 +186,9 @@
   top: 4px;
   width: 16px;
   height: 16px;
-  border-left: 2px solid #130f26;
-  border-right: 2px solid #130f26;
-  border-bottom: 2px solid #130f26;
+  border-left: 2px solid var(--color-000000);
+  border-right: 2px solid var(--color-000000);
+  border-bottom: 2px solid var(--color-000000);
   transform: skewX(-10deg);
 }
 .card .hero-ellipse {
@@ -197,7 +197,7 @@
   top: -110px;
   width: 110px;
   height: 110px;
-  background: #c1c1c1;
+  background: var(--color-d9d9d9);
   border-radius: 50%;
   box-shadow: 0 8px 25px 0 #20202080;
 }
@@ -234,7 +234,7 @@
 .meta-col .meta-label {
   font-size: 11px;
   line-height: 16.5px;
-  color: #a9a9a9;
+  color: var(--color-a9a9a9);
 }
 .meta-col .meta-value {
   font-size: 11px;
@@ -245,7 +245,7 @@
 .pill {
   height: 23px;
   padding: 0 8px;
-  background: #ffe1b3;
+  background: var(--color-e9fffa);
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
@@ -254,7 +254,7 @@
 .star {
   width: 10px;
   height: 10px;
-  background: #ffad30;
+  background: var(--color-666666);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 67% 57%, 79% 91%, 50% 70%, 21% 91%, 33% 57%, 2% 35%, 39% 35%);
 }
 .star.small { width: 11px; height: 12px; }
@@ -304,7 +304,7 @@
   height: 86px;
   border-radius: 50%;
   box-shadow: 0 6.3px 19.7px 0 #20202066;
-  background: #c1c1c1;
+  background: var(--color-d9d9d9);
 }
 .card-compact .content {
   position: absolute;
@@ -343,12 +343,12 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #ddd;
+  background: var(--color-d9d9d9);
 }
 .creator .creator-name {
   font-size: 11px;
   line-height: 16.5px;
-  color: #a9a9a9;
+  color: var(--color-a9a9a9);
 }
 .time-row {
   display: inline-flex;
@@ -358,32 +358,32 @@
 .timer-ic {
   width: 17px;
   height: 17px;
-  border: 1.5px solid #a9a9a9;
+  border: 1.5px solid var(--color-979797);
   border-radius: 50%;
   position: relative;
 }
 .timer-ic::before {
-  content: " ";
+  content: "";
   position: absolute;
   left: 5px;
   top: 3px;
   width: 6px;
   height: 1.5px;
-  background: #a9a9a9;
+  background: var(--color-979797);
 }
 .timer-ic::after {
-  content: " ";
+  content: "";
   position: absolute;
   left: 8px;
   top: 6px;
   width: 1.5px;
   height: 5px;
-  background: #a9a9a9;
+  background: var(--color-979797);
 }
 .time-text {
   font-size: 11px;
   line-height: 16.5px;
-  color: #a9a9a9;
+  color: var(--color-979797);
 }
 .rating-compact {
   position: absolute;
@@ -419,7 +419,7 @@
   background: transparent;
   border-radius: 4px;
 }
-#nav-bar .nav-btn.home { left: 40px; background: var(--color-129575); border-radius: 12px; width: 40px; height: 40px; top: 24px; }
+#nav-bar .nav-btn.home { left: 40px; background: var(--color-000000); border-radius: 12px; width: 40px; height: 40px; top: 24px; }
 #nav-bar .nav-btn.bookmark { left: 144px; }
 #nav-bar .nav-btn.bell { left: 208px; }
 #nav-bar .nav-btn.profile { left: 272px; }
@@ -430,7 +430,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--color-129575);
+  background: var(--color-000000);
   transform: translateY(-8px);
 }
 #nav-bar .nav-menu .plus {
